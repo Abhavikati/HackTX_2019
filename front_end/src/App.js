@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import orglogo from "./logo.svg"
+import Banner from "./components/BackgroundBanner"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+  return(
+    <div className = "App">
+      <header className = "App-header">
+        <Banner src = {orglogo}/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Event Name
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
       </header>
     </div>
-  );
+  )
 }
 
 export default App;
